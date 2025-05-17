@@ -33,7 +33,7 @@ for avi_path in BASE_DIR.rglob("*.avi"):
 """
 
 
-import cv2
+"""import cv2
 import numpy as np
 import mediapipe as mp
 import time
@@ -166,7 +166,7 @@ cap.release()
 cv2.destroyAllWindows()
 
 
-
+"""
 
 """import csv
 
