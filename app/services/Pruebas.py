@@ -1,3 +1,34 @@
+import os
+
+def eliminar_avi_en_directorio(base_path):
+    archivos_borrados = []
+
+    for root, dirs, files in os.walk(base_path):
+        for file in files:
+            if file.lower().endswith('.avi'):
+                ruta_completa = os.path.join(root, file)
+                try:
+                    os.remove(ruta_completa)
+                    archivos_borrados.append(ruta_completa)
+                except Exception as e:
+                    print(f"Error al borrar {ruta_completa}: {e}")
+
+    if archivos_borrados:
+        print(f"\nSe eliminaron {len(archivos_borrados)} archivos .avi:")
+        for archivo in archivos_borrados:
+            print(f" - {archivo}")
+    else:
+        print("No se encontraron archivos .avi para eliminar.")
+
+if __name__ == "__main__":
+    ruta_base = "resources/DataSet/Palabras/"
+
+    if not os.path.isdir(ruta_base):
+        print("❌ Ruta no válida. Asegúrate de escribir una carpeta existente.")
+    else:
+        eliminar_avi_en_directorio(ruta_base)
+
+
 """import os
 import subprocess
 from pathlib import Path
