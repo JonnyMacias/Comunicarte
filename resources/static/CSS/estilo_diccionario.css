@@ -1,0 +1,190 @@
+/*--------CONTENIDO-----------*/
+main{
+    margin-left: 230px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+    color: var(--color-texto-contenido);
+}
+main.min_main{
+    margin-left: 60px;
+}
+main .img_principal{
+    width: 100%;
+    border: none ;
+    margin-top: 40px;
+    height: 300px;
+    background-color: var(--color-funcionalidades);
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 30px;
+    color: var(--color-funcionalidades-texto);
+    justify-content: center; /* Centra el texto */
+    box-sizing: border-box; /* Evita que el padding afecte el tamaño */
+}
+
+.principal{
+    
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    
+}
+.princi_titulo{
+    margin-left: 40%;
+    margin-top: 20px;
+    width: 17%;
+    
+    justify-content: center; 
+}
+/*Estilos de la caja principal Busqueda*/
+.menu_busqueda{
+    margin: 3%;
+    
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.buscador{
+    
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+/*Estilos de la barra de busqueda*/
+
+.barra_busqueda {
+    flex: 1;
+    padding-left: 70px;
+    align-items: center;
+}
+
+.barra_busqueda input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    
+}
+/*Eslilos del Botón*/
+.boton {
+    
+    margin-right: 100px;
+}
+
+.boton button {
+    background-color: #176BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos del menú de categorías */
+.menu_categorias{
+    width: 25%;
+    height: 100%;
+    background-color: var(--color-funcionalidades);
+    padding: 30px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.menu_categorias select {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.titulo_palab_frecuentes{
+    margin-left: 38%;
+    margin-top: 20px;
+    width: 20%;
+    
+    justify-content: center;
+    margin-bottom: 10px;
+}
+main hr{
+    border: solid #1464F6 1px;
+}
+.titulo_palab_frecuentes h1{
+    align-items: center;
+}
+
+.container_botones{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    border: solid 2px #1464F6;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.items img{
+    width: 80px;
+}
+
+.container_emergente {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.498);
+    text-align: center;
+    padding: 20px;
+}
+.imgSena{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.emergente_back{
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    border-radius: 50%;
+    padding: 2px;
+    width: 25px;
+    cursor: pointer;
+}
+.emergente_back:hover{
+    background-color: rgba(255, 0, 0, 0.671);
+}
+
+.videoSenal{
+    width: 400px;
+    border-radius: 20px;
+}

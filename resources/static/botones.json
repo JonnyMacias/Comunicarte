@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Deletreo",
+        "simbolo": "IMG/Func/lettersWhite.svg",
+        "categoria": "deletreo"
+    },
+    {
+        "nombre": "Gestos",
+        "simbolo": "IMG/Func/gesturesWhite.svg",
+        "categoria": "gestos"
+    },
+    {
+        "nombre": "Frases",
+        "simbolo": "IMG/Func/phrasesWhite.svg",
+        "categoria": "frases"
+    }
+]

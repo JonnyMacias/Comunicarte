@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo_navegador.css">
+    <link rel="stylesheet" href="CSS/estilo_chatbot.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="barra_superior">
+        <div class="logo">
+            <img src="IMG/Logo.png" alt="">
+            <span>MANO MANITA v2.0</span>
+        </div>
+        <div class="usuario">
+            <span>Jonny Macias</span>
+            <span class="rol">Product Manager</span>
+            <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+    </header>
+    
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <nav class="barra_lateral">
+        <div>
+            <div class="nombre_pagina">
+                <img src="IMG/Nav/menu.svg" alt="" class="icon_nav" id="mano">
+            </div>
+            <!--
+            <button class="boton">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Create new </span>
+            </button>-->
+        </div>
+        
+        <div class="navegacion">
+            <ul>
+                <li>
+                    <a id="home" href="index.html">
+                        <img src="IMG/Nav/home.svg" alt="" class="iconNav">
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="deletro.html">
+                        <img src="IMG/Nav/letters.svg" alt="">
+                        <span>Deletreo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/mirror.svg" alt="">
+                        <span>Mimica</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="diccionario.html">
+                        <img src="IMG/Nav/book.svg" alt="">
+                        <span>Diccionario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/bot.svg" alt="">
+                        <span>ChatBot</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/translate.svg" alt="">
+                        <span>Traductor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+       <div>
+        <div class="linea"></div>
+
+        <div class="modo_oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    </nav>
+
+    <main class="container_main">
+        <section class="main_encabezado">
+            <h1>DELETREO</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est impedit sint natus expedita reiciendis, explicabo consequatur enim similique eveniet nisi molestiae ipsam facere dolorem tempore minima quam voluptatum dolor veritatis?</p>
+
+        </section>
+        <section class="main_contenido">
+            <div class="contenido_text">
+                <h2>Sobre este apartado</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum saepe incidunt neque deserunt dicta velit earum quasi, nobis nisi obcaecati veritatis? Non accusamus aspernatur omnis cupiditate deserunt animi, similique odio.</p>
+
+            </div>
+            <div class="contenido_img">
+                <img src="IMG/Logo.png" alt="">
+
+            </div>
+        </section>
+
+        <section class="container_chat">
+            <div class="chat_cam">
+                <div class="container_cam">
+                    <div class="cam_usuario">
+                        <video id="video_chat" autoplay playsinline></video>
+                        <canvas id="canvas_chat" style="display:none;"></canvas>
+                    </div>
+                   
+                    <div class="cam_bot">
+                        <img src="IMG/chatbot/bot.svg" alt="">
+                    </div>
+                </div>
+                <div class="cam_botones">
+                    <img id="botonCall" src="IMG/chatbot/call.svg" alt="">
+
+                </div>
+
+            </div>
+            <div class="chat_message">
+                <div class="chat_header">
+                    <img src="IMG/chatbot/bot.svg" alt="">
+                    <h2> Robot de senales</h2>
+
+                </div>
+                <hr>
+                <div class="chat_conversation">
+                    <div class="mensaje_bot">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+
+                    </div>
+                    <div class="mensaje_person">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  .</p>
+                    </div>
+                    <div class="mensaje_bot">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+
+                    </div>
+                    <div class="mensaje_person">
+                        <p>Lorem, ipsum dolor sit</p>
+                    </div>
+                    <div class="mensaje_bot">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio eveniet</p>
+
+                    </div>
+                    <div class="mensaje_person">
+                        <p>Lorem,</p>
+                    </div>
+                    <div class="mensaje_person">
+                        <p>Lorem,</p>
+                    </div>
+                    <div class="mensaje_person">
+                        <p>Lorem,</p>
+                    </div>
+
+                </div>
+                <div class="chat_send">
+                    <input type="text">
+                    <img src="IMG/chatbot/send.svg" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+    
+    </main>
+
+
+
+    
+</body>
+
+<script src="JS/script_nav.js"></script>
+<script src="JS/script_chatbot.js"></script>
+</html>

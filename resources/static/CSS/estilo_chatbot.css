@@ -1,0 +1,206 @@
+:root{
+    --fondo_azul: rgb(8,68,164);
+    --fondo_azulDeg: rgba(8, 68, 164, 0.695);
+    --fondo_blanco: white;
+    --fondo_grees: #212121;
+    --fondo_gres: rgb(59, 58, 58);
+    --letra_blanca: white;
+    --letra_negra: black;
+    
+}
+
+
+
+.container_main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 230px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+    color: var(--color-texto-contenido);
+}
+
+main.min_main{
+    margin-left: 50px;
+}
+
+.main_encabezado{
+    margin-top:40px;
+    padding: 20px;
+    background-color: var(--fondo_azul);
+    width: 101%;
+    height: 200px;
+    color: var(--letra_blanca);
+}
+
+.main_contenido{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.782);
+    text-align: center;
+}
+
+.contenido_img img {
+    width: 50%;
+}
+
+.container_chat{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 1px;
+    width: 98%;
+    height: 75vh;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px var(--fondo_azul);
+}
+
+.chat_cam{
+    width: 60%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.chat_message{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    padding: 20px;
+}
+
+/* ------------------------------ camara --------------------------------------------- */
+.container_cam{
+    position: relative;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 85%;
+    border-radius: 20px 0 0 0;
+    text-align: center;
+}
+.cam_usuario{
+    width: 100%;
+    height: 100%;
+}
+
+.cam_usuario video{
+    height: 100%;
+    border: 2px solid white;
+}
+
+.cam_bot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    background-color: var(--fondo_grees);
+    border-radius: 20px;
+}
+
+.cam_bot img{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--fondo_blanco);
+    width: 100px;
+}
+
+.cam_botones{
+    width: 100%;
+    height: 15%;
+    background-color: antiquewhite;
+    border-radius: 0 0 0 20px;
+    text-align:center;
+}
+
+.cam_botones img{
+    background-color: rgba(255, 0, 0, 0.575);
+    margin: 10px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.chat_header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+.chat_header img{
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 3px;
+    width: 40px;
+    margin-right: 20px;
+}
+.chat_conversation{
+    margin-top: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.mensaje_bot{
+    max-width: 90%;
+    align-self: flex-start;
+}
+.mensaje_person{
+    padding: 10px;
+    max-width: 90%;
+    align-self: flex-end;
+    background-color: var(--fondo_azul);
+    border-radius: 20px 0 20px 20px;
+    color: white;
+}
+.chat_send{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--fondo_azulDeg);
+    border-radius: 10px;
+}
+
+.chat_send input{
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    width: 80%;
+
+}
+.chat_send img{
+    margin: 2px 20px;
+    border-radius: 5px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.chat_send img:hover{
+    width: 28px;
+}

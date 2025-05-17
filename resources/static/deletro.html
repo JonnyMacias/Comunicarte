@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo_navegador.css">
+    <link rel="stylesheet" href="CSS/estilo_deletreo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="barra_superior">
+        <div class="logo">
+            <img src="IMG/Logo.png" alt="">
+            <span>LSM</span>
+        </div>
+        <div class="usuario">
+            <span>Jonny Macias</span>
+            <span class="rol">Product Manager</span>
+            <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+    </header>
+    
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <nav class="barra_lateral">
+        <div>
+            <div class="nombre_pagina">
+                <img src="IMG/Nav/menu.svg" alt="" class="icon_nav" id="mano">
+            </div>
+            <!--
+            <button class="boton">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Create new </span>
+            </button>-->
+        </div>
+        
+        <div class="navegacion">
+            <ul>
+                <li>
+                    <a id="home" href="index.html">
+                        <img src="IMG/Nav/home.svg" alt="" class="iconNav">
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/letters.svg" alt="">
+                        <span>Deletreo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/mirror.svg" alt="">
+                        <span>Mimica</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="diccionario.html">
+                        <img src="IMG/Nav/book.svg" alt="">
+                        <span>Diccionario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chatbot.html">
+                        <img src="IMG/Nav/bot.svg" alt="">
+                        <span>ChatBot</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/translate.svg" alt="">
+                        <span>Traductor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+       <div>
+        <div class="linea"></div>
+
+        <div class="modo_oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    </nav>
+    <br><br>
+    <main class="container_main">
+        <br><br>
+        <section class="main_contenido">
+            <div class="contenido_text">
+                <h2>Deletreo</h2>
+                <br>
+                <p>El deletreo en lenguaje de señas es la representación manual de las letras del alfabeto con las manos, utilizada para deletrear palabras, especialmente nombres propios, términos técnicos o palabras que no tienen una seña establecida. Este sistema se conoce como alfabeto dactilológico y varía ligeramente entre diferentes lenguas de señas.</p>
+
+            </div>
+            <div class="contenido_img">
+                <img src="IMG/Logo.png" alt="">
+
+            </div>
+        </section>
+
+        <section class="container_deletreo">
+            <div class="video_deletreo">
+                <video id="video" autoplay playsinline></video>
+                <canvas id="canvas" style="display:none;"></canvas>
+            </div>
+            <div class="palabras_deletreo">
+                <div class="text_palabras">
+                    <h2>PALABRA</h2>
+                    <h2 id="palabra"></h2>
+                    <h2 id="caracteres"></h2>
+                    <h4 id="statusen" style="color: red;"></h6>
+                </div>
+                <div class="botones_palabras">
+                    <button id="capture" class="boton">Capturar</button>
+                    <button id="next" class="boton">Siguiente</button>
+                </div>
+            </div>  
+        </section>
+
+        <div class="container_emergente">
+            <img id="back" class="emergente_back" src="IMG/deletreo/back.svg" alt="">
+            <h2 id="mensajeV"></h2>
+            <img id="statusImg" class="emergente_img" src="" alt="">
+            <div class="emergente_boton">
+                <button id="reintentar">Reintentar</button>
+                <button id="eSiguiente">Siguiente</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+<script src="JS/script_nav.js"></script>
+<script src="JS/script_deletreo.js"></script>
+</html>

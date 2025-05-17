@@ -1,0 +1,98 @@
+
+/*--------CONTENIDO-----------*/
+#home{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+main{
+    margin-left: 230px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+    color: var(--color-texto-contenido);
+}
+main.min_main{
+    margin-left: 60px;
+}
+main .img_principal{
+    width: 100%;
+    border: none ;
+    margin-top: 40px;
+    height: 300px;
+    background-color: var(--color-funcionalidades);
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 30px;
+    color: var(--color-funcionalidades-texto);
+    justify-content: center; /* Centra el texto */
+    box-sizing: border-box; /* Evita que el padding afecte el tamaño */
+}
+.encabezado{
+    margin-left: 30px;
+}
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 98%;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-fondo-descripcion);
+    border-radius: 20px;
+}
+.text_descripcion{
+    
+    margin: 20px;
+    width: 50%;
+
+}
+
+.imagen_descripcion{
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+}
+.imagen_descripcion img{
+    width: 50%;
+}
+main .funcionalidades{
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+main .funcionalidades div{
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-funcionalidades);
+    color: var(--color-funcionalidades-texto);
+    border-radius: 20px;
+    text-align: center; 
+    padding: 10px;
+}
+
+main .funcionalidades div img {
+   
+    width: 50%; 
+    height: auto;
+    margin-top: 5px; 
+}
+/*------------RESPONSIVE------*/
+
+@media(max-width:600px){
+    main{
+        margin-left: 0;
+    }
+    main.min_main{
+        margin-left: 0;
+    }
+}

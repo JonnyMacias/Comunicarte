@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario</title>
+    <link rel="stylesheet" href="CSS/estilo_diccionario.css">
+    <link rel="stylesheet" href="CSS/estilo_navegador.css">
+</head>
+
+<body>
+    <div>
+        
+    </div>
+    <header class="barra_superior">
+        <div class="logo">
+            <img src="IMG/logo.svg" alt="">
+            <span>LSM</span>
+        </div>
+        <div class="usuario">
+            <span>Jonny Macias</span>
+            <span class="rol">Product Manager</span>
+            <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+    </header>
+    
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <nav class="barra_lateral">
+        <div>
+            <div class="nombre_pagina">
+
+                <img src="IMG/Nav/menu.svg" alt="" class="icon_nav" id="mano">
+            </div>
+            <!--
+            <button class="boton">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Create new </span>
+            </button>-->
+        </div>
+        
+        <div class="navegacion">
+            <ul>
+                <li>
+                    <a id="home" href="index.html">
+                        <img src="IMG/Nav/home.svg" alt="" class="iconNav">
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="deletro.html">
+                        <img src="IMG/Nav/letters.svg" alt="">
+                        <span>Deletreo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/mirror.svg" alt="">
+                        <span>Mimica</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="diccionario.html">
+                        <img src="IMG/Nav/book.svg" alt="¿">
+                        <span>Diccionario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/bot.svg" alt="">
+                        <span>ChatBot</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="IMG/Nav/translate.svg" alt="">
+                        <span>Traductor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+       <div>
+        <div class="linea"></div>
+
+        <div class="modo_oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    </nav>
+
+    <!--CONTENIDO DE LA PAGINA-->
+    <main>
+        <br><br>
+        <div class="principal">
+            <div class="princi_titulo">
+                <h1>Diccionario LSM</h1>
+            </div>
+            <div class="menu_busqueda">
+                <div class="buscador">
+                    <div class="barra_busqueda">
+                        <input type="text" id="searchInput" placeholder="🔍 Buscar señas">
+    
+                    </div>
+                    <div class="boton">
+                        <button id="searchButton">Buscar</button>
+                    </div>
+                </div>
+                <div class="menu_categorias">
+                    <select id="categorySelect">
+                        <option value="">Categorías</option>
+                        <option value="categoria1">Abecedario</option>
+                        <option value="categoria2">Adjetivos, pronombres, preposiciones y artículos</option>
+                        <option value="categoria3">Animales</option>
+                        <option value="categoria4">Antonimos</option>
+                        <option value="categoria5">Casa</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="titulo_palab_frecuentes">
+                <h1>Palabras Frecuentes</h1>
+            </div>
+            <hr>
+        </div>
+        <div class="container_botones">
+        </div>
+
+        <div class="container_emergente">
+            <img id="back" class="emergente_back" src="IMG/deletreo/back.svg" alt="">
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="JS/script_nav.js"></script>
+    <script src="JS/script_botones.js"></script>
+</body>
+
+</html>
